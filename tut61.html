@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object javascript</title>
+</head>
+<body>
+   <div class="container">
+    <h1>this is math tutorial javascript</h1>
+   </div> 
+   <script>
+
+// PRINTING THE MATH OBJECT
+    let m = Math;
+    console.log(m)
+
+// PRINTING THE CONSTANT FROM MATH OBJECT    
+    console.log("the value of math.E is ", Math.E)
+    console.log("the value of math.LN2 is ", Math.LN2)
+    console.log("the value of math.LN10 is ", Math.LN10)
+    console.log("the value of math.LOG2E is ", Math.LOG2E)
+    console.log("the value of math.LOG10E is ", Math.LOG10E)
+    console.log("the value of math.PI is ", Math.PI)
+    console.log("the value of math.SQRT1_2 is ", Math.SQRT1_2)
+    console.log("the value of math.SQRT2 is ", Math.SQRT2)
+
+// PRINTING THE FUNCTION FROM MATH OBJECT
+let a = 34.65534;
+let b = 89;
+
+console.log("the value of a and b is ", a, b);
+console.log("the value of a and b rounded is ", Math.round(a), Math.round(b));
+
+console.log("3 raised to the power of 2 is ", Math.pow(3, 2));       //3*3
+console.log("2 raised to the power of 12 is ", Math.pow(2, 12));     //2*12
+console.log("1 raised to the power of 2 is ", Math.pow(1, 2));
+
+console.log("square root of 36 is ", Math.sqrt(36));
+console.log("square root of 81 is ", Math.sqrt(81));
+console.log("square root of 58 is ", Math.sqrt(58));
+
+// ceil and floor
+console.log("5.8 rounded up to nearest integer is ", Math.ceil(5,8))
+console.log("5.8 rounded down to nearest integer is ", Math.floor(5,8))
+
+// absolute function
+console.log("absolute value of 5.66 is", Math.abs(5.66))
+console.log("absolute value of -5.66 is", Math.abs(-5.66))
+
+// trinonometric functions
+console.log("the value of sin(pi) is ", Math.sin(Math.PI))
+console.log("the value of tan(pi) is ", Math.tan(Math.PI/2))
+console.log("the value of cos(pi) is ", Math.cos(Math.PI))
+
+//min and max functions
+console.log("minimum value of 4, 5, 6, is ", Math.min(4, 5, 6))
+console.log("maximum value of 4, 5, 6, is ", Math.max(4, 5, 6))
+
+//generating a random number
+let r = Math.random();
+// random number between (a, b) = a  + (b-a)*math.random()
+let a1 = 1;
+let b1 = 100;
+let r1_100 = 1 + (100-1)*Math.random();
+console.log("the random number is ", r);
+console.log("the random number is ", r1_100);
+
+
+
+
+
+
+   </script>
+</body>
+</html>

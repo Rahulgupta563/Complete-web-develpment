@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript dates and time</title>
+</head>
+<style>
+    .container{
+        font-size: 23px;
+        background-color: black;
+        border: 2px solid red;
+        margin: 20px;
+        padding: 35px;
+        text-align: center;
+        color: white;
+        border-radius: 55px;
+        
+    }
+</style>
+<body>
+   <div class="container">
+    
+    current time is <span id="time"></span>
+   </div> 
+   <script>
+    console.log("this is date and time tutorials")
+
+    let now = new Date();
+    console.log(now);
+
+    let dt = new Date(0);
+    console.log(dt);
+
+    //let newDate = new Date("2029-6-13");
+   // console.log(newDate);
+
+   //let newDate = new Date(year, month, date, hours, mintus, seconds, milliseconds);
+   let newDate = new Date(3020, 8, 16, 5, 13, 59 );
+    console.log(newDate);
+
+    let yr = newDate.getFullYear()
+    console.log("the year is", yr);
+
+    let date = newDate.getDate()
+    console.log("the date is", date);
+
+    let day = newDate.getDay()
+    console.log("the day is", day);
+
+   // let off = newDate.getTimezoneOffset()
+   // console.log("the off is", off);
+
+   // let utc = newDate.getUTCDate()
+    //console.log("the utcdate is", utc);
+
+    //let full = newDate.getUTCFullYear()
+    //console.log("the full years is", full);
+
+    newDate.setDate(38);    //31 ke bad 1 se jodega 1 2 3 aishe to run hone pe 8 milega isme ok
+    newDate.getTime(12);   //change krne ke liye
+    console.log(newDate);
+
+    setInterval(updateTime, 1000);
+    function updateTime(){
+        time.innerHTML = new Date();
+    }
+
+    
+    
+
+
+
+
+   </script>
+</body>
+</html>

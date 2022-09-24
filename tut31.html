@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div li p{
+            background-color: green;
+            font-weight: bold;
+            color:white;
+        } */
+
+
+/* if p is right inside div then this css will applied */
+        /* div > p{
+            background-color: green;
+            font-weight: bold;
+            color:white;
+        } */
+
+
+/* if p is right after div i.e p is the next stibling of div */
+        /* div + p{
+            color: rgb(24, 67, 255);
+            background-color: rgb(255, 15, 127);
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>this is on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is another paragraph inside li</p>
+                </li>
+                    <li>this will not get affected</li>
+                    <p>this is a para inside ul</p>
+                
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

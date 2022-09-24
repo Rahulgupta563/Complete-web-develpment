@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section asid'
+            'footer footer footer footer'
+             
+            ;
+
+        }
+        .item{
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+
+        }
+        #section{
+            grid-area: section;
+
+        }
+        #asid{
+            grid-area: asid;
+
+        }
+        footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navnar" class="item">
+            home contact us about 
+        </div>
+        <div id="section" class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, reiciendis delectus! Fugiat doloribus quae ullam! Recusandae voluptatem expedita unde, consequuntur iste itaque quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eligendi praesentium rem, harum nulla eveniet assumenda repudiandae necessitatibus, dignissimos nobis expedita ipsam amet, vitae veniam. Corrupti, dolores velit eaque deleniti numquam dolorem voluptatibus. Ullam.
+        </div>
+        <div id="asid" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ullam commodi deserunt animi dolore distinctio accusamus Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis quos quibusdam eaque ipsa itaque mollitia fugiat, eveniet at veritatis nemo accusantium molestiae.
+        </div>
+
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos unde ab cum illo consequuntur amet cupiditate dicta quo accusamus.</footer>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is about loops
+    </div>
+    <script>
+        console.log("this is tutorial 55");
+
+        /*
+        let i = 0;
+        for(i=0; i<3;i++){
+            console.log(i);
+        }
+        */
+
+        let friends = ["rohan", "sanjjet", "rahul", "skillf"];
+        /*
+        for (let index = 0; index < friends.length; index++) {
+            console.log("hallo friends," + friends[index]);
+            
+        }
+        */
+
+        /*
+        for (let index = 0; index < friends.length; index++) {
+            console.log(friends[index]);
+            
+        }
+        */
+
+        /*
+        //forEach javascript
+
+        friends.forEach(function f(element){
+            console.log("hallo friends, " + element)
+        }); 
+        */
+
+        /*
+        // for of javascript
+
+        for (element of friends){
+            console.log("hallo friends, " + element)
+
+        }
+        */
+
+        let employee = {
+            name: "rahul",
+            salary: 2,
+            channel: "cwr"
+        }
+
+        for (key in employee){
+            // use thi loop to iterate over objects in javascript
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // while loop in js
+        let i =0;
+        while(i<4) {
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+        let j =34;
+        do{
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+            j++;
+        }
+        while(j<4);
+        </script>
+</body>
+</html>
